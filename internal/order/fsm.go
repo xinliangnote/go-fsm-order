@@ -7,7 +7,7 @@ import (
 )
 
 type State int                             // 状态
-type Event string                          // 时间
+type Event string                          // 事件
 type Handler func(opt *Opt) (State, error) // 处理方法，并返回新的状态
 
 // FSM 有限状态机
